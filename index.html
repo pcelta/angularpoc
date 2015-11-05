@@ -1,0 +1,14 @@
+<html ng-app="app">
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js" type="text/javascript"></script>
+		<script src="app.js" type="text/javascript"></script>
+	</head>
+	<body ng-controller="EnvController">
+		<ul>			
+			<li ng-repeat="env in envs">
+				{{ env.name }}<br />
+				{{ env.branch }}
+			</li>
+		</ul>
+	</body>
+</html>
